@@ -25,7 +25,7 @@
     header h1 {
       font-family: 'Orbitron', sans-serif;
       color: #ffd700;
-      font-size: 2.8rem;
+      font-size: 3rem;
     }
 
     nav a {
@@ -52,7 +52,7 @@
     }
 
     .hero p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #fff;
     }
 
@@ -132,21 +132,6 @@
       color: #ffd700;
     }
 
-    .brands {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      padding: 3rem 1rem;
-      background: rgba(0, 0, 0, 0.85);
-    }
-
-    .brands img {
-      max-height: 50px;
-      filter: brightness(1.2);
-    }
-
     footer {
       text-align: center;
       padding: 2rem;
@@ -171,6 +156,19 @@
       width: 60px;
       height: 60px;
     }
+
+    .brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+
+    .brands img {
+      max-width: 100px;
+      filter: grayscale(100%) brightness(1.5);
+    }
   </style>
 </head>
 <body>
@@ -186,7 +184,7 @@
 
   <div class="hero">
     <h2>Armá la PC que soñás</h2>
-    <p>Con nuestro asesoramiento vas a tener el setup que merecés. Rendimiento, calidad, flow y envíos a todo el país.</p>
+    <p>Con nuestro asesoramiento vas a tener el setup que merecés. Rendimiento, calidad y flow. Envíos a todo el país.</p>
   </div>
 
   <section class="section" id="servicios">
@@ -205,22 +203,64 @@
       <div class="fancy-card">
         <img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" alt="Soporte" class="icono">
         <h4>Soporte remoto</h4>
-        <p>Instalaciones, errores, optimización. Te ayudamos desde casa por WhatsApp o remoto.</p>
+        <p>Servicio de conexión a distancia. Ayudamos remotamente a cualquier PC del país, sin importar dónde estés.</p>
       </div>
     </div>
   </section>
 
-  <section class="brands">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_Corsair.svg/512px-Logo_Corsair.svg.png" alt="Corsair">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MSI_Logo.svg/512px-MSI_Logo.svg.png" alt="MSI">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/ASUS_Logo.svg/512px-ASUS_Logo.svg.png" alt="ASUS">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Logitech_logo.svg/512px-Logitech_logo.svg.png" alt="Logitech">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gigabyte_Technology_logo.svg/512px-Gigabyte_Technology_logo.svg.png" alt="Gigabyte">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/AMD_Logo.svg/512px-AMD_Logo.svg.png" alt="AMD">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Intel_Logo.svg/512px-Intel_Logo.svg.png" alt="Intel">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Western_Digital_logo_2017.svg/512px-Western_Digital_logo_2017.svg.png" alt="Western Digital">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/512px-Nvidia_logo.svg.png" alt="NVIDIA">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/HyperX_logo.svg/512px-HyperX_logo.svg.png" alt="HyperX">
+  <section class="section" id="armatu">
+    <h3 class="titulo-section">Galería de equipos armados</h3>
+    <div class="cards">
+      <div class="fancy-card">
+        <img src="https://i.imgur.com/oPj4A8u.jpeg" alt="PC Gamer 1" class="icono">
+        <p>PC gamer RTX + Ryzen 7</p>
+      </div>
+      <div class="fancy-card">
+        <img src="https://i.imgur.com/MJt3E8K.jpeg" alt="Componentes 2" class="icono">
+        <p>Mother, RAM, GPU y todo lo necesario</p>
+      </div>
+      <div class="fancy-card">
+        <img src="https://i.imgur.com/bSm6jF2.jpeg" alt="PC Setup 3" class="icono">
+        <p>Setup armado full LED</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3 class="titulo-section">Marcas que trabajamos</h3>
+    <div class="brands">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/AMD_Logo.svg" alt="AMD">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Nvidia_logo.svg" alt="NVIDIA">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Intel_logo_2020.svg" alt="Intel">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/MSI_Logo.svg" alt="MSI">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Corsair_logo.svg" alt="Corsair">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Gigabyte_Technology_logo.svg" alt="Gigabyte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/ASRock_logo.svg" alt="ASRock">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/AsusTek_Computer_Logo.svg" alt="ASUS">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/HyperX_logo.svg" alt="HyperX">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Logitech_logo.svg" alt="Logitech">
+    </div>
+  </section>
+
+  <section class="section opinions">
+    <h3 class="titulo-section">Opiniones de nuestros clientes</h3>
+    <div class="cards">
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Lucas P.">
+        <strong>Lucas P.</strong>
+        <p>⭐⭐⭐⭐⭐ - El mejor asesoramiento que tuve. ¡Los recomiendo 100%!</p>
+      </div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Camila R.">
+        <strong>Camila R.</strong>
+        <p>⭐⭐⭐⭐⭐ - Me armaron una PC para streaming, anda joya.</p>
+      </div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Federico M.">
+        <strong>Federico M.</strong>
+        <p>⭐⭐⭐⭐⭐ - Les pregunté todo por WhatsApp y me ayudaron siempre.</p>
+      </div>
+    </div>
   </section>
 
   <footer id="contacto">
