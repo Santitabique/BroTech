@@ -1,126 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Brotech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BroTech - Armá tu PC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
     body {
-      background-color: #f4f4f4;
-      color: #333;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url('https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
 
     header {
-      background-color: #1e1e1e;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     header h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ffd700;
+      font-size: 2.8rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      padding: 10rem 2rem 3rem;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h2 {
+      font-size: 4rem;
+      color: #ffd700;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #fff;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .titulo-section {
       font-size: 3rem;
-      color: #7ed957;
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-family: 'Orbitron', sans-serif;
     }
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1100px;
       margin: auto;
     }
 
-    h2 {
-      color: #1e1e1e;
-      margin-bottom: 20px;
+    .fancy-card {
+      background: rgba(30, 30, 30, 0.9);
+      border: 2px solid #ffd700;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
     }
 
-    .servicios {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    .fancy-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
     }
 
-    .servicio {
-      flex: 1 1 250px;
-      background-color: white;
-      padding: 20px;
-      border-left: 5px solid #7ed957;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .fancy-card h4 {
+      color: #ffd700;
+      margin-top: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .fancy-card p {
+      color: #ddd;
+      margin-top: 0.5rem;
+    }
+
+    .icono {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1rem;
+      filter: brightness(1.2) drop-shadow(0 0 3px #ffd700);
+    }
+
+    .opinions .profile {
+      background: #1e1e1e;
+      border: 1px solid #ffd700;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .opinions img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+
+    .opinions strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #ffd700;
     }
 
     footer {
-      background-color: #1e1e1e;
-      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.85);
+      color: #aaa;
     }
 
-    a.boton {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #7ed957;
-      color: #1e1e1e;
+    .social a {
+      color: #ffd700;
+      margin: 0 0.5rem;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
     }
 
-    a.boton:hover {
-      background-color: #6cc44f;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Brotech</h1>
-    <p>Innovación verde para un futuro sustentable</p>
-    <a href="#contacto" class="boton">Contactanos</a>
+    <h1>BroTech</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#armatu">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <section id="quienes-somos">
-    <h2>¿Quiénes somos?</h2>
-    <p>Brotech es un emprendimiento tecnológico creado por estudiantes con el objetivo de desarrollar soluciones sustentables que integren la tecnología con el medio ambiente.</p>
-  </section>
+  <div class="hero">
+    <h2>Armá la PC que soñás</h2>
+    <p>Con nuestro asesoramiento vas a tener el setup que merecés. Rendimiento, calidad y flow.</p>
+  </div>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="servicios">
-      <div class="servicio">
-        <h3>Consultoría Eco-Tech</h3>
-        <p>Asesoramos a empresas y proyectos sobre cómo incorporar tecnología sustentable en sus procesos.</p>
+  <section class="section" id="servicios">
+    <h3 class="titulo-section">🚀 Nuestros Servicios Premium</h3>
+    <div class="cards">
+      <div class="fancy-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920222.png" alt="Armado" class="icono">
+        <h4>Armado personalizado</h4>
+        <p>Contanos qué vas a hacer con la PC y elegimos los componentes perfectos. Sin vueltas.</p>
       </div>
-      <div class="servicio">
-        <h3>Diseño de Productos Verdes</h3>
-        <p>Desarrollamos prototipos innovadores que reducen el impacto ambiental.</p>
+      <div class="fancy-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Reparación" class="icono">
+        <h4>Reparación y mantenimiento</h4>
+        <p>Limpieza, upgrade, cambio de partes, solución de fallos. Te dejamos la PC como nueva.</p>
       </div>
-      <div class="servicio">
-        <h3>Educación Ambiental</h3>
-        <p>Ofrecemos charlas, talleres y materiales educativos para concientizar sobre el uso responsable de la tecnología.</p>
+      <div class="fancy-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" alt="Soporte" class="icono">
+        <h4>Soporte remoto</h4>
+        <p>Instalaciones, errores, optimización. Te ayudamos desde casa por WhatsApp o remoto.</p>
       </div>
     </div>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Querés saber más? Escribinos a <a href="mailto:brotech@gmail.com">brotech@gmail.com</a></p>
+  <section class="section" id="armatu">
+    <h3 class="titulo-section">Galería de equipos armados</h3>
+    <div class="cards">
+      <div class="fancy-card"><img src="https://i.imgur.com/oPj4A8u.jpeg" alt="PC Gamer 1" class="icono"><p>PC gamer RTX + Ryzen 7</p></div>
+      <div class="fancy-card"><img src="https://i.imgur.com/MJt3E8K.jpeg" alt="Componentes 2" class="icono"><p>Mother, RAM, GPU y todo lo necesario</p></div>
+      <div class="fancy-card"><img src="https://i.imgur.com/bSm6jF2.jpeg" alt="PC Setup 3" class="icono"><p>Setup armado full LED</p></div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Brotech. Todos los derechos reservados.</p>
+  <section class="section opinions">
+    <h3 class="titulo-section">Opiniones de nuestros clientes</h3>
+    <div class="cards">
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Lucas P.">
+        <strong>Lucas P.</strong>
+        <p>⭐⭐⭐⭐⭐ - El mejor asesoramiento que tuve. ¡Los recomiendo 100%!</p>
+      </div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Camila R.">
+        <strong>Camila R.</strong>
+        <p>⭐⭐⭐⭐⭐ - Me armaron una PC para streaming, anda joya.</p>
+      </div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Federico M.">
+        <strong>Federico M.</strong>
+        <p>⭐⭐⭐⭐⭐ - Les pregunté todo por WhatsApp y me ayudaron siempre.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>Contacto: santiagoeveron7@gmail.com</p>
+    <p>WhatsApp: <a href="https://wa.me/542477300764" target="_blank" style="color:#ffd700;">+54 2477 300764</a></p>
+    <div class="social">
+      <a href="https://www.instagram.com/tu_instagram" target="_blank">Instagram</a>
+    </div>
+    <p style="margin-top: 1rem;">© 2025 BroTech. Todos los derechos reservados.</p>
   </footer>
+
+  <a href="https://wa.me/542477300764" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+  </a>
+</body>
+</html>
 
 </body>
 </html>
