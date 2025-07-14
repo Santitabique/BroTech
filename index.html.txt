@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brotech</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #7ed957;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1e1e1e;
+      margin-bottom: 20px;
+    }
+
+    .servicios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .servicio {
+      flex: 1 1 250px;
+      background-color: white;
+      padding: 20px;
+      border-left: 5px solid #7ed957;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a.boton {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #7ed957;
+      color: #1e1e1e;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    a.boton:hover {
+      background-color: #6cc44f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Brotech</h1>
+    <p>Innovación verde para un futuro sustentable</p>
+    <a href="#contacto" class="boton">Contactanos</a>
+  </header>
+
+  <section id="quienes-somos">
+    <h2>¿Quiénes somos?</h2>
+    <p>Brotech es un emprendimiento tecnológico creado por estudiantes con el objetivo de desarrollar soluciones sustentables que integren la tecnología con el medio ambiente.</p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <h3>Consultoría Eco-Tech</h3>
+        <p>Asesoramos a empresas y proyectos sobre cómo incorporar tecnología sustentable en sus procesos.</p>
+      </div>
+      <div class="servicio">
+        <h3>Diseño de Productos Verdes</h3>
+        <p>Desarrollamos prototipos innovadores que reducen el impacto ambiental.</p>
+      </div>
+      <div class="servicio">
+        <h3>Educación Ambiental</h3>
+        <p>Ofrecemos charlas, talleres y materiales educativos para concientizar sobre el uso responsable de la tecnología.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Querés saber más? Escribinos a <a href="mailto:brotech@gmail.com">brotech@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brotech. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
