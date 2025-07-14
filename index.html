@@ -9,7 +9,6 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #000;
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -28,7 +27,7 @@
     header h1 {
       font-family: 'Orbitron', sans-serif;
       color: #ffd700;
-      font-size: 4.2rem;
+      font-size: 3.8rem;
       margin: 0;
     }
 
@@ -40,7 +39,7 @@
     }
 
     .marcas-header img {
-      height: 40px;
+      height: 36px;
       filter: brightness(1.2);
     }
 
@@ -62,13 +61,13 @@
     }
 
     .hero h2 {
-      font-size: 4.5rem;
+      font-size: 4rem;
       color: #ffd700;
       margin-bottom: 1rem;
     }
 
     .hero p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: #fff;
     }
 
@@ -173,17 +172,9 @@
       height: 60px;
     }
 
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-
     .galeria img {
       width: 100%;
-      height: 200px;
+      max-height: 200px;
       object-fit: cover;
       border-radius: 8px;
     }
@@ -204,16 +195,16 @@
   <header>
     <h1>BroTech</h1>
     <div class="marcas-header">
-      <img src="https://1000marcas.net/wp-content/uploads/2020/06/Corsair-Logo.png" alt="Corsair">
-      <img src="https://1000marcas.net/wp-content/uploads/2021/06/MSI-Logo.png" alt="MSI">
-      <img src="https://1000marcas.net/wp-content/uploads/2017/04/AMD-logo.png" alt="AMD">
-      <img src="https://1000marcas.net/wp-content/uploads/2021/10/Intel-Logo.png" alt="Intel">
-      <img src="https://1000marcas.net/wp-content/uploads/2020/10/Nvidia-logo.png" alt="NVIDIA">
-      <img src="https://1000marcas.net/wp-content/uploads/2020/06/Logitech-logo.png" alt="Logitech">
-      <img src="https://1000marcas.net/wp-content/uploads/2022/03/Asus-Logo.png" alt="ASUS">
-      <img src="https://1000marcas.net/wp-content/uploads/2020/07/Gigabyte-logo.png" alt="Gigabyte">
-      <img src="https://1000marcas.net/wp-content/uploads/2022/08/HyperX-Logo.png" alt="HyperX">
-      <img src="https://1000marcas.net/wp-content/uploads/2019/08/Razer-logo.png" alt="Razer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Corsair_logo.svg/512px-Corsair_logo.svg.png" alt="Corsair">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/MSI_logo.svg/512px-MSI_logo.svg.png" alt="MSI">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/AMD_Logo.svg" alt="AMD">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg" alt="Intel">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Nvidia_logo.svg" alt="NVIDIA">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Logitech_logo.svg" alt="Logitech">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/AsusTek_Computer_Logo.svg" alt="ASUS">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Gigabyte_Technology_logo.svg" alt="Gigabyte">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HyperX_logo.svg" alt="HyperX">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Razer_logo.svg" alt="Razer">
     </div>
     <nav>
       <a href="#">Inicio</a>
@@ -222,5 +213,22 @@
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
-</body>
-</html>
+
+  <div class="hero">
+    <h2>Armá la PC que soñás</h2>
+    <p>Setup profesional, rendimiento garantizado y asistencia real. ¡Envíos a todo el país!</p>
+  </div>
+
+  <section class="section" id="servicios">
+    <h3 class="titulo-section">🚀 Nuestros Servicios Premium</h3>
+    <div class="cards">
+      <div class="fancy-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920222.png" alt="Armado" class="icono">
+        <h4>Armado personalizado</h4>
+        <p>Contanos qué vas a hacer con la PC y elegimos los componentes perfectos. Sin vueltas.</p>
+      </div>
+      <div class="fancy-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Reparación" class="icono">
+        <h4>Reparación y mantenimiento</h4>
+        <p>Limpieza, upgrade, cambio de partes, solución de fallos. Te dejamos la PC como nueva.</p>
+      </div
