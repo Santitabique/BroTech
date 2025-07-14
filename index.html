@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BroTech - Armá tu PC</title>
+  <title>BroTech - Asesoramiento de PCs</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter&display=swap" rel="stylesheet">
   <style>
     body {
@@ -36,6 +36,7 @@
       gap: 0.5rem;
       align-items: center;
       flex-wrap: wrap;
+      margin-top: 1rem;
     }
 
     .marcas-header img {
@@ -69,6 +70,17 @@
     .hero p {
       font-size: 1.4rem;
       color: #fff;
+    }
+
+    .alerta {
+      font-size: 1.1rem;
+      background: rgba(255, 215, 0, 0.2);
+      color: #ffd700;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ffd700;
+      display: inline-block;
+      margin-top: 2rem;
+      border-radius: 8px;
     }
 
     .section {
@@ -125,26 +137,11 @@
       filter: brightness(1.2) drop-shadow(0 0 3px #ffd700);
     }
 
-    .opinions .profile {
-      background: #1e1e1e;
-      border: 1px solid #ffd700;
-      border-radius: 12px;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    .opinions img {
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
+    .galeria img {
+      width: 100%;
+      max-height: 200px;
       object-fit: cover;
-      margin-bottom: 0.5rem;
-    }
-
-    .opinions strong {
-      display: block;
-      margin-bottom: 0.3rem;
-      color: #ffd700;
+      border-radius: 8px;
     }
 
     footer {
@@ -171,13 +168,6 @@
       width: 60px;
       height: 60px;
     }
-
-    .galeria img {
-      width: 100%;
-      max-height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -195,16 +185,15 @@
   <header>
     <h1>BroTech</h1>
     <div class="marcas-header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Corsair_logo.svg/512px-Corsair_logo.svg.png" alt="Corsair">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/MSI_logo.svg/512px-MSI_logo.svg.png" alt="MSI">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/MSI_Logo.svg/512px-MSI_Logo.svg.png" alt="MSI">
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/AMD_Logo.svg" alt="AMD">
       <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Intel-logo.svg" alt="Intel">
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Nvidia_logo.svg" alt="NVIDIA">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Logitech_logo.svg" alt="Logitech">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/AsusTek_Computer_Logo.svg" alt="ASUS">
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Gigabyte_Technology_logo.svg" alt="Gigabyte">
       <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HyperX_logo.svg" alt="HyperX">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Razer_logo.svg" alt="Razer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Logitech_logo_2015.svg" alt="Logitech">
     </div>
     <nav>
       <a href="#">Inicio</a>
@@ -216,66 +205,58 @@
 
   <div class="hero">
     <h2>Armá la PC que soñás</h2>
-    <p>Setup profesional, rendimiento garantizado y asistencia real. ¡Envíos a todo el país!</p>
+    <p>Asesoramiento personalizado y técnico para lograr el setup perfecto. </p>
+    <div class="alerta">⚠️ No vendemos productos, solo brindamos asesoramiento profesional.</div>
   </div>
 
   <section class="section" id="servicios">
-    <h3 class="titulo-section">🚀 Nuestros Servicios Premium</h3>
+    <h3 class="titulo-section">🛠️ Servicios de Asesoramiento</h3>
     <div class="cards">
       <div class="fancy-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920222.png" alt="Armado" class="icono">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920222.png" class="icono" alt="Armado">
         <h4>Armado personalizado</h4>
-        <p>Contanos qué vas a hacer con la PC y elegimos los componentes perfectos. Sin vueltas.</p>
+        <p>Contanos qué vas a hacer con la PC y elegimos los componentes ideales para vos.</p>
       </div>
       <div class="fancy-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" alt="Reparación" class="icono">
-        <h4>Reparación y mantenimiento</h4>
-        <p>Limpieza, upgrade, cambio de partes, solución de fallos. Te dejamos la PC como nueva.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png" class="icono" alt="Revisión">
+        <h4>Diagnóstico técnico</h4>
+        <p>Analizamos tu setup actual y te damos mejoras o soluciones recomendadas.</p>
       </div>
       <div class="fancy-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="Consultoría" class="icono">
-        <h4>Asesoramiento experto</h4>
-        <p>¿No sabés qué elegir? Te guiamos según tu presupuesto, necesidades y estilo de uso.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="icono" alt="Periféricos">
+        <h4>Recomendación de periféricos</h4>
+        <p>Te orientamos con lo mejor en monitores, teclados, auriculares y más.</p>
       </div>
       <div class="fancy-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Periféricos" class="icono">
-        <h4>Venta de periféricos</h4>
-        <p>Monitores, teclados mecánicos, auriculares pro, mouse gamer y mucho más.</p>
-      </div>
-      <div class="fancy-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Soporte técnico" class="icono">
-        <h4>Soporte remoto</h4>
-        <p>¿Tenés un problema urgente? Nos conectamos con tu PC y lo resolvemos en el acto.</p>
-      </div>
-      <div class="fancy-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2933/2933188.png" alt="Gaming" class="icono">
-        <h4>Optimización para gaming</h4>
-        <p>Configuración pro para FPS, RGB y rendimiento extremo. Jugá como los streamers.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" class="icono" alt="Consulta">
+        <h4>Consultas a medida</h4>
+        <p>Tenés dudas técnicas o de compatibilidad, te ayudamos con claridad.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="armatu">
-    <h3 class="titulo-section">🖼️ Galería de Setups y Builds</h3>
+    <h3 class="titulo-section">💻 Setups y Proyectos Asesorados</h3>
     <div class="cards galeria">
       <img src="https://cdn.wallpapersafari.com/57/15/SG8KsJ.jpg" alt="Setup gamer RGB">
-      <img src="https://i.pinimg.com/originals/70/d5/8b/70d58b6fae0f89e2a7ea58b1b0ccf7e2.jpg" alt="Interior gabinete PC gamer">
-      <img src="https://cdn.mos.cms.futurecdn.net/RLZb3ZJwSoTqVP8XQJNHhG.jpg" alt="Escritorio minimal setup">
-      <img src="https://images.alphacoders.com/108/thumb-1920-1081033.jpg" alt="PC master race full RGB">
+      <img src="https://i.pinimg.com/originals/70/d5/8b/70d58b6fae0f89e2a7ea58b1b0ccf7e2.jpg" alt="Gabinete PC">
+      <img src="https://cdn.mos.cms.futurecdn.net/RLZb3ZJwSoTqVP8XQJNHhG.jpg" alt="Escritorio setup">
+      <img src="https://images.alphacoders.com/108/thumb-1920-1081033.jpg" alt="PC master race">
     </div>
   </section>
 
   <footer id="contacto">
-    <p>© 2025 BroTech. Todos los derechos reservados.</p>
+    <p>© 2025 BroTech. Solo asesoramiento técnico. Todos los derechos reservados.</p>
     <div class="social">
       <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">YouTube</a>
     </div>
   </footer>
 
   <div class="whatsapp-float">
-    <a href="https://wa.me/549XXXXXXXXX" target="_blank">
+    <a href="https://wa.me/5492477300764" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
     </a>
   </div>
 </body>
 </html>
+
