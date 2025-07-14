@@ -132,6 +132,26 @@
       color: #ffd700;
     }
 
+    .brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .brand-logo {
+      width: 100px;
+      height: auto;
+      filter: grayscale(100%) brightness(1.2);
+      transition: filter 0.3s ease;
+    }
+
+    .brand-logo:hover {
+      filter: none;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -165,13 +185,14 @@
       <a href="#">Inicio</a>
       <a href="#servicios">Servicios</a>
       <a href="#armatu">Galería</a>
+      <a href="#marcas">Marcas</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <div class="hero">
     <h2>Armá la PC que soñás</h2>
-    <p>Con nuestro asesoramiento vas a tener el setup que merecés. Rendimiento, calidad y flow.</p>
+    <p>Con nuestro asesoramiento vas a tener el setup que merecés. Rendimiento, calidad, flow y <strong>envíos a todo el país</strong>.</p>
   </div>
 
   <section class="section" id="servicios">
@@ -192,6 +213,22 @@
         <h4>Soporte remoto</h4>
         <p>Instalaciones, errores, optimización. Te ayudamos desde casa por WhatsApp o remoto.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="marcas">
+    <h3 class="titulo-section">Marcas que trabajamos</h3>
+    <div class="brands">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Corsair_logo.svg" alt="Corsair" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/MSI_logo.svg" alt="MSI" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/AsusTek_Computer_Logo.svg" alt="ASUS" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Logitech_logo.svg" alt="Logitech" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Gigabyte_Technology_logo.svg" alt="Gigabyte" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/AMD_Logo.svg" alt="AMD" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Intel_logo.svg" alt="Intel" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Western_Digital_logo.svg" alt="WD" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/NVIDIA_logo.svg" alt="NVIDIA" class="brand-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/HyperX_logo.svg" alt="HyperX" class="brand-logo">
     </div>
   </section>
 
